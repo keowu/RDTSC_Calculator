@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/01 00:24:37.000.285,=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/07 19:37:37.000.979,=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/23 17:57:30.000.822,=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/23 17:57:47.000.036,=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/23 18:03:10.000.332,C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\main.fmx=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2020/02/23 18:03:10.000.332,C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\main.pas=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/23 18:03:17.000.674,C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\pCALCAPP.dproj=C:\Users\Joao\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/02/24 22:06:42.000.362,=C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\Unit2.pas</Transaction>
+    <Transaction>2020/02/24 22:09:26.000.722,C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\Umsg.pas=C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\Unit2.pas</Transaction>
+    <Transaction>2020/02/24 22:09:26.000.722,C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\Umsg.fmx=C:\Users\Joao\Desktop\Projetos\RDTSC_CALC\aplication\Unit2.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

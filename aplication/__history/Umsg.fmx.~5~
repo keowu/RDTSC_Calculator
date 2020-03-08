@@ -1,0 +1,53 @@
+object frmmsg: Tfrmmsg
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = None
+  Caption = 'Informa'#231#227'o !'
+  ClientHeight = 217
+  ClientWidth = 372
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF565656
+    Size.Width = 372.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+  end
+  object RoundRect1: TRoundRect
+    Fill.Color = claCoral
+    Position.X = 120.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    OnClick = RoundRect1Click
+    object msg2: TLabel
+      Align = Center
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 120.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'msg2'
+      TabOrder = 0
+    end
+  end
+  object msg1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 'msg1'
+    TabOrder = 2
+  end
+end

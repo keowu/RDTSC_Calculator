@@ -1,0 +1,28 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = None
+  Caption = 'Form2'
+  ClientHeight = 217
+  ClientWidth = 372
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF565656
+    Size.Width = 372.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+  end
+  object RoundRect1: TRoundRect
+    Position.X = 120.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
