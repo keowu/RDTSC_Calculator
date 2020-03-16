@@ -32,10 +32,10 @@ Português
 
 ## Screenshots
 ![enter image description here](https://i.imgur.com/lOTiQWp.png)
-
+![enter image description here](https://i.imgur.com/a9IX8nE.png)
 
 ## Histórico de lançamentos / Build History
-
+* 1.05 - Graph Version
 * 1.01 - First release
 
 
