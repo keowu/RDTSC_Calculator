@@ -1,0 +1,74 @@
+object frmgraph: Tfrmgraph
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Graph'
+  ClientHeight = 425
+  ClientWidth = 573
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF464646
+    Size.Width = 573.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Align = Center
+    Fill.Color = claWhite
+    Size.Width = 433.000000000000000000
+    Size.Height = 287.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object trdtsc: TChart
+    Position.X = 64.000000000000000000
+    Position.Y = 72.000000000000000000
+    Foot.Font.StyleExt = {00040000000200000004000000}
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    Title.Text.Strings = (
+      'RDTSC')
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Color = claWhite
+    TabOrder = 2
+    Size.Width = 441.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 19
+    object Series1: TFastLineSeries
+      Title = 'Series1'
+      LinePen.Color = xFF33B5E5
+      LinePen.Fill.Color = xFF33B5E5
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        00190000000000000000188A400000000000308B400000000000508E40000000
+        00007C8A400000000000F88B400000000000308B400000000000008E40000000
+        000054904000000000004A90400000000000288E4000000000000E9040000000
+        00004E91400000000000A2924000000000007092400000000000749340000000
+        0000C8944000000000008893400000000000E293400000000000BA9340000000
+        0000FA944000000000002E934000000000000693400000000000269140000000
+        0000C88E4000000000001C8B40}
+    end
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 80.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 473.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claWhite
+    Text = 
+      'When using this option the hook capture delay was increased by 6' +
+      ' seconds.'
+    TabOrder = 3
+  end
+end

@@ -26,6 +26,9 @@ type
     nosound: TRoundRect;
     Label5: TLabel;
     Image2: TImage;
+    graph: TImage;
+    lblgraph: TLabel;
+    lblgithub: TLabel;
     procedure getCPUClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure RoundRect2Click(Sender: TObject);
@@ -33,6 +36,11 @@ type
     procedure FormShow(Sender: TObject);
     procedure nosoundClick(Sender: TObject);
     procedure Image2Click(Sender: TObject);
+    procedure graphMouseEnter(Sender: TObject);
+    procedure graphMouseLeave(Sender: TObject);
+    procedure Image2MouseEnter(Sender: TObject);
+    procedure Image2MouseLeave(Sender: TObject);
+    procedure graphClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,7 +54,7 @@ implementation
 
 {$R *.fmx}
 
-uses Umsg;
+uses Umsg, Ugraph;
 // DLL DO RDTSC
 function GetCPUSpeed: string; stdcall;
   external 'RDTSC_Calculator.dll' name 'GetCPUSpeed';
@@ -95,9 +103,36 @@ begin
   frmmsg.Show;
 end;
 
+procedure Tfrmmain.graphClick(Sender: TObject);
+begin
+frmgraph.Series1.Clear;
+Timer1.Interval := 6000;
+frmgraph.Show;
+end;
+
+procedure Tfrmmain.graphMouseEnter(Sender: TObject);
+begin
+lblgraph.Visible := true;
+end;
+
+procedure Tfrmmain.graphMouseLeave(Sender: TObject);
+begin
+lblgraph.Visible:=false;
+end;
+
 procedure Tfrmmain.Image2Click(Sender: TObject);
 begin
 ShellExecute(GetDesktopWindow, 'open', 'https://github.com/keowu/RDTSC_Calculator', '', '', 1);
+end;
+
+procedure Tfrmmain.Image2MouseEnter(Sender: TObject);
+begin
+lblgithub.Visible := true;
+end;
+
+procedure Tfrmmain.Image2MouseLeave(Sender: TObject);
+begin
+lblgithub.Visible := false;
 end;
 
 procedure Tfrmmain.nosoundClick(Sender: TObject);
@@ -114,8 +149,20 @@ begin
 end;
 
 procedure Tfrmmain.Timer1Timer(Sender: TObject);
+var
+ count: string;
 begin
   lblcpuspeed.Text := GetCPUSpeed;
+
+  count := StringReplace(GetCPUSpeed, ' MHZ', '',
+   [rfReplaceAll, rfIgnoreCase]);
+
+  frmgraph.Series1.AddY(StrToFloat(count));
+
+  if(frmgraph.Series1.Count >= 20) then
+  begin
+    frmgraph.Series1.Clear;
+  end;
 end;
 
 end.
