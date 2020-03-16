@@ -1,0 +1,13 @@
+name: 'RDTSC_Calculator'
+description: 'A simple hook for reverse engineering on x86 processors, to be used with ollydbg, x64dbg and the like.'
+author: '@Keowu - João Vitor'
+branding:
+  icon: 'code'
+  color: 'blue'
+inputs:
+  x86 Processors:
+    description: 'Run in x86 architecture for correct input.'
+    required: true
+runs:
+  using: 'exe'
+  main: 'main.exe'
